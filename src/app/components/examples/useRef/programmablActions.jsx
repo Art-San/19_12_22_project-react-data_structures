@@ -1,16 +1,16 @@
-import React, { useRef } from "react";
-import CardWrapper from "../../common/Card";
-import Divider from "../../common/divider";
-import SmallTitle from "../../common/typografy/smallTitle";
+import React, { useRef } from 'react'
+import CardWrapper from '../../common/Card'
+import Divider from '../../common/divider'
+import SmallTitle from '../../common/typografy/smallTitle'
 const ProgrammablActionsExample = () => {
-    const inputRef = useRef();
+    const inputRef = useRef()
     const handleClick = () => {
-        console.log(inputRef.current.clientWidth);
-        inputRef.current.focus();
-    };
+        console.log(inputRef.current.clientWidth)
+        inputRef.current.focus()
+    }
     const handleClickWidth = () => {
-        inputRef.current.style.width = "100px";
-    };
+        inputRef.current.style.width = '100px'
+    }
     return (
         <CardWrapper>
             <SmallTitle className="card-title">
@@ -33,7 +33,7 @@ const ProgrammablActionsExample = () => {
                 Изменить ширину объекта
             </button>
         </CardWrapper>
-    );
-};
+    )
+}
 
-export default ProgrammablActionsExample;
+export default ProgrammablActionsExample

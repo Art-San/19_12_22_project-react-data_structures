@@ -1,35 +1,35 @@
-import React, { useCallback, useEffect, useState } from "react";
-import PropTypes from "prop-types";
+import React, { useCallback, useEffect, useState } from 'react'
+import PropTypes from 'prop-types'
 const LogOutButton = ({ onLogOut }) => {
     useEffect(() => {
-        console.log("render button");
-    });
+        console.log('render button')
+    })
 
     return (
         <button className="btn btn-primary" onClick={onLogOut}>
-            {" "}
+            {' '}
             LogOut
         </button>
-    );
-};
+    )
+}
 LogOutButton.propTypes = {
     onLogOut: PropTypes.func
-};
+}
 
 function areEqual(prevState, nextState) {
     if (prevState.onLogOut !== nextState.onLogOut) {
-        return false;
+        return false
     }
-    return true;
+    return true
 }
 
-const MemoizedLogOutButton = React.memo(LogOutButton, areEqual);
+const MemoizedLogOutButton = React.memo(LogOutButton, areEqual)
 
 const MemoWithUseCallbackExample = (props) => {
-    const [state, setState] = useState(false);
+    const [state, setState] = useState(false)
     const handleLogOut = useCallback(() => {
-        localStorage.removeItem("auth");
-    }, [props]);
+        localStorage.removeItem('auth')
+    }, [props])
 
     return (
         <>
@@ -42,7 +42,7 @@ const MemoWithUseCallbackExample = (props) => {
 
             <MemoizedLogOutButton onLogOut={handleLogOut} />
         </>
-    );
-};
+    )
+}
 
-export default MemoWithUseCallbackExample;
+export default MemoWithUseCallbackExample

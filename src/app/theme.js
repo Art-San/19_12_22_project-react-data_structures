@@ -1,4 +1,4 @@
-import { createTheme, responsiveFontSizes } from "@mui/material/styles";
+import { createTheme, responsiveFontSizes } from '@mui/material/styles'
 
 const theme = responsiveFontSizes(
     createTheme({
@@ -8,8 +8,8 @@ const theme = responsiveFontSizes(
     "Segoe UI Emoji", "Segoe UI Symbol"`
         },
         palette: {
-            mode: "dark"
+            mode: 'dark'
         }
     })
-);
-export default theme;
+)
+export default theme

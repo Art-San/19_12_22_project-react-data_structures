@@ -1,15 +1,15 @@
-import React from "react";
-import Subtitle from "app/components/common/typografy/subtitle";
-import { CodeBlock, dracula } from "react-code-blocks";
+import React from 'react'
+import Subtitle from 'app/components/common/typografy/subtitle'
+import { CodeBlock, dracula } from 'react-code-blocks'
 import {
     oneToOneExample1Part1,
     oneToOneExample1Part2,
     oneToOneExample2Part1,
     oneToOneExample2Part2
-} from "./examples";
-import Title from "app/components/common/typografy/title";
-import SmallTitle from "app/components/common/typografy/smallTitle";
-import Text from "app/components/common/typografy/text";
+} from './examples'
+import Title from 'app/components/common/typografy/title'
+import SmallTitle from 'app/components/common/typografy/smallTitle'
+import Text from 'app/components/common/typografy/text'
 
 const OneToOnePage = () => {
     return (
@@ -59,7 +59,7 @@ const OneToOnePage = () => {
                 wrapLines={true}
             />
         </>
-    );
-};
+    )
+}
 
-export default OneToOnePage;
+export default OneToOnePage

@@ -1,4 +1,4 @@
-import FormComponent from "./form";
+import FormComponent from './form'
 
-export * from "./fields";
-export default FormComponent;
+export * from './fields'
+export default FormComponent

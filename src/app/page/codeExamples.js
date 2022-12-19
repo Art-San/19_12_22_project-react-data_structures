@@ -9,7 +9,7 @@ export const example1Part1 = `// user Entity
         zip: "12345"
     }
 }
-`;
+`
 export const example1Part2 = `// User Entity
 {
     _id: "joe",
@@ -22,4 +22,4 @@ export const example1Part2 = `// User Entity
     city: "Faketon",
     state: "MA",
     zip: "12345"
-}`;
+}`

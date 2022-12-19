@@ -1,13 +1,13 @@
-import React, { useRef } from "react";
-import CollapseWrapper from "../common/collapse";
+import React, { useRef } from 'react'
+import CollapseWrapper from '../common/collapse'
 const UseRefExercise = () => {
-    const blockRef = useRef();
+    const blockRef = useRef()
 
     const handelClick = () => {
-        blockRef.current.children[0].innerText = "text";
-        blockRef.current.style.width = "150px";
-        blockRef.current.style.height = "80px";
-    };
+        blockRef.current.children[0].innerText = 'text'
+        blockRef.current.style.width = '150px'
+        blockRef.current.style.height = '80px'
+    }
     return (
         <CollapseWrapper title="Упражнение">
             <p className="mt-3">
@@ -24,7 +24,7 @@ const UseRefExercise = () => {
                 style={{
                     height: 40,
                     width: 60,
-                    color: "white"
+                    color: 'white'
                 }}
             >
                 <small>Блок</small>
@@ -33,7 +33,7 @@ const UseRefExercise = () => {
                 Trigger action
             </button>
         </CollapseWrapper>
-    );
-};
+    )
+}
 
-export default UseRefExercise;
+export default UseRefExercise

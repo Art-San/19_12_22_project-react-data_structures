@@ -1,10 +1,10 @@
-import React from "react";
-import Title from "app/components/common/typografy/title";
-import SmallTitle from "app/components/common/typografy/smallTitle";
-import Subtitle from "app/components/common/typografy/subtitle";
-import Text from "app/components/common/typografy/text";
-import { CodeBlock, dracula } from "react-code-blocks";
-import { overloadExampleAfter, overloadExampleBefore } from "./examples";
+import React from 'react'
+import Title from 'app/components/common/typografy/title'
+import SmallTitle from 'app/components/common/typografy/smallTitle'
+import Subtitle from 'app/components/common/typografy/subtitle'
+import Text from 'app/components/common/typografy/text'
+import { CodeBlock, dracula } from 'react-code-blocks'
+import { overloadExampleAfter, overloadExampleBefore } from './examples'
 const ManyToManyPage = () => {
     return (
         <>
@@ -44,7 +44,7 @@ const ManyToManyPage = () => {
                 wrapLines={true}
             />
         </>
-    );
-};
+    )
+}
 
-export default ManyToManyPage;
+export default ManyToManyPage

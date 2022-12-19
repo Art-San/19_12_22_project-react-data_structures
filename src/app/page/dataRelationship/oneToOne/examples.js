@@ -8,7 +8,7 @@ export const oneToOneExample1Part1 = `{
         zip: "12345"
     }
 }
-`;
+`
 export const oneToOneExample1Part2 = `// User 
 {
     _id: "joe",
@@ -21,7 +21,7 @@ export const oneToOneExample1Part2 = `// User
     city: "Faketon",
     state: "MA",
     zip: "12345"
-}`;
+}`
 
 export const oneToOneExample2Part1 = `{
     _id: 1,
@@ -49,7 +49,7 @@ export const oneToOneExample2Part1 = `{
         },
         lastUpdated: ISODate("2020-01-09T00:02:53")
     }
-}`;
+}`
 
 export const oneToOneExample2Part2 = `// movie collection
 [
@@ -88,4 +88,4 @@ export const oneToOneExample2Part2 = `// movie collection
             lastUpdated: ISODate("2020-01-29T00:02:53")
         }
     }
-]`;
+]`

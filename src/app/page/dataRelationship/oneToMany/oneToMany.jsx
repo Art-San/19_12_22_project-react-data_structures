@@ -1,17 +1,17 @@
-import Title from "app/components/common/typografy/title";
-import Subtitle from "app/components/common/typografy/subtitle";
-import SmallTitle from "app/components/common/typografy/smallTitle";
-import Text from "app/components/common/typografy/text";
-import { CodeBlock, dracula } from "react-code-blocks";
-import diagram from "app/assets/img/diagrams/One-To-Many.jpg";
+import Title from 'app/components/common/typografy/title'
+import Subtitle from 'app/components/common/typografy/subtitle'
+import SmallTitle from 'app/components/common/typografy/smallTitle'
+import Text from 'app/components/common/typografy/text'
+import { CodeBlock, dracula } from 'react-code-blocks'
+import diagram from 'app/assets/img/diagrams/One-To-Many.jpg'
 import {
     adressesExampleDenormalized,
     adressesExampleNormalized,
     publisherExampleDenormalized,
     publisherExampleNormalizedByPublisher,
     publisherExampleNormalizedByBook
-} from "./examples";
-import React from "react";
+} from './examples'
+import React from 'react'
 const OneToManyPage = () => {
     return (
         <>
@@ -66,12 +66,12 @@ const OneToManyPage = () => {
             <img
                 src={diagram}
                 style={{
-                    width: "100%",
-                    borderRadius: "10px"
+                    width: '100%',
+                    borderRadius: '10px'
                 }}
             />
         </>
-    );
-};
+    )
+}
 
-export default OneToManyPage;
+export default OneToManyPage

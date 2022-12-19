@@ -1,74 +1,74 @@
 /* eslint-disable no-irregular-whitespace */
-import * as React from "react";
-import Title from "app/components/common/typografy/title";
-import Subtitle from "app/components/common/typografy/subtitle";
-import Text from "app/components/common/typografy/text";
-import { CodeBlock, dracula } from "react-code-blocks";
-import { example1Part1, example1Part2 } from "./codeExamples";
-import Chip from "@mui/material/Chip";
-import Stack from "@mui/material/Stack";
-import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import diagram1 from "app/assets/img/diagrams/DeNormalized.jpg";
-import diagram2 from "app/assets/img/diagrams/Normalized.jpg";
-import SmallTitle from "app/components/common/typografy/smallTitle";
-import Divider from "app/components/common/divider";
-import Table from "@mui/material/Table";
-import TableBody from "@mui/material/TableBody";
-import TableCell from "@mui/material/TableCell";
-import TableContainer from "@mui/material/TableContainer";
-import TableHead from "@mui/material/TableHead";
-import TableRow from "@mui/material/TableRow";
-import Paper from "@mui/material/Paper";
+import * as React from 'react'
+import Title from 'app/components/common/typografy/title'
+import Subtitle from 'app/components/common/typografy/subtitle'
+import Text from 'app/components/common/typografy/text'
+import { CodeBlock, dracula } from 'react-code-blocks'
+import { example1Part1, example1Part2 } from './codeExamples'
+import Chip from '@mui/material/Chip'
+import Stack from '@mui/material/Stack'
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp'
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
+import Accordion from '@mui/material/Accordion'
+import AccordionSummary from '@mui/material/AccordionSummary'
+import AccordionDetails from '@mui/material/AccordionDetails'
+import Typography from '@mui/material/Typography'
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
+import diagram1 from 'app/assets/img/diagrams/DeNormalized.jpg'
+import diagram2 from 'app/assets/img/diagrams/Normalized.jpg'
+import SmallTitle from 'app/components/common/typografy/smallTitle'
+import Divider from 'app/components/common/divider'
+import Table from '@mui/material/Table'
+import TableBody from '@mui/material/TableBody'
+import TableCell from '@mui/material/TableCell'
+import TableContainer from '@mui/material/TableContainer'
+import TableHead from '@mui/material/TableHead'
+import TableRow from '@mui/material/TableRow'
+import Paper from '@mui/material/Paper'
 function createData(name, norm, denorm) {
-    return { name, norm, denorm };
+    return { name, norm, denorm }
 }
 
 const rows = [
     createData(
-        "Объем данных",
-        <KeyboardArrowDownIcon style={{ color: "green" }} />,
-        <KeyboardArrowUpIcon style={{ color: "red" }} />
+        'Объем данных',
+        <KeyboardArrowDownIcon style={{ color: 'green' }} />,
+        <KeyboardArrowUpIcon style={{ color: 'red' }} />
     ),
     createData(
-        "Скорость получения данных",
-        <KeyboardArrowDownIcon style={{ color: "red" }} />,
-        <KeyboardArrowUpIcon style={{ color: "green" }} />
+        'Скорость получения данных',
+        <KeyboardArrowDownIcon style={{ color: 'red' }} />,
+        <KeyboardArrowUpIcon style={{ color: 'green' }} />
     ),
     createData(
-        "Несогласованность данных",
-        <KeyboardArrowDownIcon style={{ color: "green" }} />,
-        <KeyboardArrowUpIcon style={{ color: "red" }} />
+        'Несогласованность данных',
+        <KeyboardArrowDownIcon style={{ color: 'green' }} />,
+        <KeyboardArrowUpIcon style={{ color: 'red' }} />
     ),
     createData(
-        "Простота запроса",
+        'Простота запроса',
 
-        <KeyboardArrowDownIcon style={{ color: "red" }} />,
-        <KeyboardArrowUpIcon style={{ color: "green" }} />
+        <KeyboardArrowDownIcon style={{ color: 'red' }} />,
+        <KeyboardArrowUpIcon style={{ color: 'green' }} />
     ),
     createData(
-        "Затраты на Update/Put",
-        <KeyboardArrowDownIcon style={{ color: "green" }} />,
-        <KeyboardArrowUpIcon style={{ color: "red" }} />
+        'Затраты на Update/Put',
+        <KeyboardArrowDownIcon style={{ color: 'green' }} />,
+        <KeyboardArrowUpIcon style={{ color: 'red' }} />
     ),
     createData(
         <>
             Сложность кода для <br /> работы со схемой
         </>,
-        <KeyboardArrowDownIcon style={{ color: "green" }} />,
-        <KeyboardArrowUpIcon style={{ color: "red" }} />
+        <KeyboardArrowDownIcon style={{ color: 'green' }} />,
+        <KeyboardArrowUpIcon style={{ color: 'red' }} />
     ),
     createData(
-        "Целостность данных",
-        <KeyboardArrowDownIcon style={{ color: "red" }} />,
-        <KeyboardArrowUpIcon style={{ color: "green" }} />
+        'Целостность данных',
+        <KeyboardArrowDownIcon style={{ color: 'red' }} />,
+        <KeyboardArrowUpIcon style={{ color: 'green' }} />
     )
-];
+]
 const Main = () => {
     return (
         <>
@@ -123,27 +123,27 @@ const Main = () => {
             <Stack
                 direction="row"
                 spacing={1}
-                style={{ margin: "10px 0 20px" }}
+                style={{ margin: '10px 0 20px' }}
             >
                 <Chip
                     label="Скорость обработки запроса"
                     variant="outlined"
-                    icon={<KeyboardArrowUpIcon style={{ color: "green" }} />}
+                    icon={<KeyboardArrowUpIcon style={{ color: 'green' }} />}
                 />
                 <Chip
                     label="Количество сущностей"
                     variant="outlined"
-                    icon={<KeyboardArrowDownIcon style={{ color: "green" }} />}
+                    icon={<KeyboardArrowDownIcon style={{ color: 'green' }} />}
                 />
                 <Chip
                     label="Избыточность данных"
                     variant="outlined"
-                    icon={<KeyboardArrowUpIcon style={{ color: "red" }} />}
+                    icon={<KeyboardArrowUpIcon style={{ color: 'red' }} />}
                 />
                 <Chip
                     label="Согласованность данных"
                     variant="outlined"
-                    icon={<KeyboardArrowDownIcon style={{ color: "red" }} />}
+                    icon={<KeyboardArrowDownIcon style={{ color: 'red' }} />}
                 />
             </Stack>
             <SmallTitle>Пример</SmallTitle>
@@ -157,8 +157,8 @@ const Main = () => {
             <img
                 src={diagram1}
                 style={{
-                    width: "100%",
-                    borderRadius: "10px"
+                    width: '100%',
+                    borderRadius: '10px'
                 }}
             />
             <Divider />
@@ -173,27 +173,27 @@ const Main = () => {
             <Stack
                 direction="row"
                 spacing={1}
-                style={{ margin: "10px 0 20px" }}
+                style={{ margin: '10px 0 20px' }}
             >
                 <Chip
                     label="Скорость обработки запроса"
                     variant="outlined"
-                    icon={<KeyboardArrowDownIcon style={{ color: "red" }} />}
+                    icon={<KeyboardArrowDownIcon style={{ color: 'red' }} />}
                 />
                 <Chip
                     label="Количество сущностей"
                     variant="outlined"
-                    icon={<KeyboardArrowUpIcon style={{ color: "red" }} />}
+                    icon={<KeyboardArrowUpIcon style={{ color: 'red' }} />}
                 />
                 <Chip
                     label="Избыточность данных"
                     variant="outlined"
-                    icon={<KeyboardArrowDownIcon style={{ color: "green" }} />}
+                    icon={<KeyboardArrowDownIcon style={{ color: 'green' }} />}
                 />
                 <Chip
                     label="Согласованность данных"
                     variant="outlined"
-                    icon={<KeyboardArrowUpIcon style={{ color: "green" }} />}
+                    icon={<KeyboardArrowUpIcon style={{ color: 'green' }} />}
                 />
             </Stack>
             <SmallTitle>Пример</SmallTitle>
@@ -207,8 +207,8 @@ const Main = () => {
             <img
                 src={diagram2}
                 style={{
-                    width: "100%",
-                    borderRadius: "10px"
+                    width: '100%',
+                    borderRadius: '10px'
                 }}
             />
             <Divider />
@@ -229,7 +229,7 @@ const Main = () => {
                             <TableRow
                                 key={row.name}
                                 sx={{
-                                    "&:last-child td, &:last-child th": {
+                                    '&:last-child td, &:last-child th': {
                                         border: 0
                                     }
                                 }}
@@ -247,7 +247,7 @@ const Main = () => {
                 </Table>
             </TableContainer>
         </>
-    );
-};
+    )
+}
 
-export default Main;
+export default Main

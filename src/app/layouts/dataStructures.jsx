@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 const DataStructures = () => {
-    return <h1>DataStructures</h1>;
-};
+    return <h1>DataStructures</h1>
+}
 
-export default DataStructures;
+export default DataStructures

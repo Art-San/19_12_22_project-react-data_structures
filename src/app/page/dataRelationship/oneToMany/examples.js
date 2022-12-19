@@ -19,7 +19,7 @@ export const adressesExampleNormalized = `// User Entity
         state: "MA",
         zip: "12345"
     }
-]`;
+]`
 export const adressesExampleDenormalized = `// User 
 {
     _id: "joe",
@@ -38,7 +38,7 @@ export const adressesExampleDenormalized = `// User
             zip: "12345"
         }
     ]
-}`;
+}`
 
 export const publisherExampleDenormalized = `//Book Entities
 [
@@ -66,7 +66,7 @@ export const publisherExampleDenormalized = `//Book Entities
             location: "CA"
         }
     }
-]`;
+]`
 export const publisherExampleNormalizedByPublisher = `// Publisher Entity
 {
     name: "O'Reilly Media",
@@ -93,7 +93,7 @@ export const publisherExampleNormalizedByPublisher = `// Publisher Entity
         pages: 68,
         language: "English"
     }
-]`;
+]`
 
 export const publisherExampleNormalizedByBook = `// Publisher Entity
 {
@@ -123,4 +123,4 @@ export const publisherExampleNormalizedByBook = `// Publisher Entity
         language: "English",
         publisher_id: "oreilly"
     }
-]`;
+]`

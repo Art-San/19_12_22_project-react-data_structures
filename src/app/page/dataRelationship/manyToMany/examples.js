@@ -39,7 +39,7 @@ export const overloadExampleBefore = `// Tag Entities
         tags:["tag2","tag3"],
         publisher_id: "oreilly"
     }
-]`;
+]`
 
 export const overloadExampleAfter = `// Tag Entities
 [
@@ -101,4 +101,4 @@ export const overloadExampleAfter = `// Tag Entities
         tagId:"tag3",
         bookId:"123456790"
     }
-]`;
+]`
