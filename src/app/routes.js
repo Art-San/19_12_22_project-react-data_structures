@@ -4,6 +4,7 @@ import AppsIcon from '@mui/icons-material/Apps'
 import OneToManyPage from './page/dataRelationship/oneToMany/oneToMany'
 import ManyToManyPage from './page/dataRelationship/manyToMany/manyToMany'
 import OneToOnePage from './page/dataRelationship/oneToOne/oneToOne'
+import Introduction from './page/dataRelationship/introduction/introduction'
 
 const routes = [
     {
@@ -56,7 +57,7 @@ const routes = [
         icon: AppsIcon,
         iconColor: 'Primary',
         layout: '/relationship',
-        component: ManyToManyPage
+        component: Introduction
     }
 
 ]
