@@ -5,6 +5,7 @@ import OneToManyPage from './page/dataRelationship/oneToMany/oneToMany'
 import ManyToManyPage from './page/dataRelationship/manyToMany/manyToMany'
 import OneToOnePage from './page/dataRelationship/oneToOne/oneToOne'
 import Introduction from './page/dataRelationship/introduction/introduction'
+import NormaDenorma from './page/dataRelationship/normaDenorma/normaDenorma'
 
 const routes = [
     {
@@ -58,6 +59,14 @@ const routes = [
         iconColor: 'Primary',
         layout: '/relationship',
         component: Introduction
+    },
+    {
+        path: '/normal-denormal',
+        name: 'Норма-Денорма',
+        icon: AppsIcon,
+        iconColor: 'Primary',
+        layout: '/relationship',
+        component: NormaDenorma
     }
 
 ]
