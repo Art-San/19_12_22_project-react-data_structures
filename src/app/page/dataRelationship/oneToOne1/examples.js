@@ -1,5 +1,4 @@
-export const manufacturers = `// Tag Entities
-[
+export const manufacturers = `
     {
         "manufacturers": [
           {
@@ -15,10 +14,9 @@ export const manufacturers = `// Tag Entities
           }
         ]
       }
-]`
+`
 
-export const storage = `// Tag Entities
-[
+export const storage = `
     const storage = {
         manufacturers: [
           {
@@ -58,10 +56,9 @@ export const storage = `// Tag Entities
       
       // Вызываем
       const denormalizedStorage = getProductsWithManufacturer(storage);
-]`
+`
 
-export const someProduct = `// Tag Entities
-[
+export const someProduct = `
     [
         {
           "id": 2,
@@ -72,4 +69,4 @@ export const someProduct = `// Tag Entities
           }
         }
       ]
-]`
+`

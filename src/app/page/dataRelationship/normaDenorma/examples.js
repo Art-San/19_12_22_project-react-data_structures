@@ -1,5 +1,4 @@
-export const arrayExample = `// Tag Entities
-[
+export const arrayExample = `
     const orders = [
         {
           id: 1,
@@ -27,10 +26,9 @@ export const arrayExample = `// Tag Entities
         }
       ];
 
-]`
+`
 
-export const exampleDenormalization = `// Tag Entities
-[
+export const exampleDenormalization = `
     {
         "id": "2778b73c-228a-4f4f-8e3e-97e775ab45c3",
         "shipment": {
@@ -50,10 +48,9 @@ export const exampleDenormalization = `// Tag Entities
             }
         }
     }
-]`
+`
 
-export const exampleNormalization = `// Tag Entities
-[
+export const exampleNormalization = `
     {
         "dictionaries": {
           "shipments": [
@@ -84,20 +81,18 @@ export const exampleNormalization = `// Tag Entities
           }
         ]
       }
-]`
+`
 
-export const discount = `// Tag Entities
-[
+export const discount = `
     {
         "discountDictionaries": [
           { "id": 1, "value": "5%", "title": "Скидка 5%" },
           { "id": 2, "value": "10%", "title": "Скидка 10%" },
           { "id": 3, "value": "15%", "title": "Скидка 15%" }
         ]
-]`
+`
 
-export const discountUser = `// Tag Entities
-[
+export const discountUser = `
     {
         "discountDictionaries": [
           { "id": 1, "value": "5%", "title": "Скидка 5%" },
@@ -110,10 +105,9 @@ export const discountUser = `// Tag Entities
           ...
         }
       }
-]`
+`
 
-export const memoizeData = `// Tag Entities
-[
+export const memoizeData = `
     const OrderPage = (props) => {
         const { discountDictionaries, order } = props;
     
@@ -129,14 +123,12 @@ export const memoizeData = `// Tag Entities
         }, [discountDictionaries, order]);
     
         return (/* ... */);
-    }
-]`
+    }`
 
-export const resultat = `// Tag Entities
-[
+export const resultat = `
     {
         "id": 1000,
         "discountTitle": "Скидка 5%",
         ...
       }
-]`
+`

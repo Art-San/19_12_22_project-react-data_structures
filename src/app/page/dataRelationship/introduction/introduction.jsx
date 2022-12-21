@@ -2,7 +2,6 @@ import React from 'react'
 import Title from 'app/components/common/typografy/title'
 import Text from 'app/components/common/typografy/text'
 import Divider from 'app/components/common/divider'
-import Br from 'app/components/common/br'
 
 const Introduction = () => {
     return (
@@ -17,14 +16,12 @@ const Introduction = () => {
                 нужно уметь работать с данными и создавать оптимальные структуры,
                 согласно требованиям вашего проекта.
             </Text>
-            <Br/>
             <Text>
                 Может показаться, что проектирование структуры данных
                 не из мира JavaScript и React, однако можно привести
                 цитату из одной из самых популярных библиотек
                 для работы со state-менеждментом Redux:
             </Text>
-            <Br/>
             <Divider/>
             <Text>
                 … рекомендуемый подход к управлению реляционными или
@@ -38,7 +35,6 @@ const Introduction = () => {
                 Подробнее прочитать про обоснование такого подхода можно по
                 <a href='https://redux.js.org/usage/structuring-reducers/normalizing-state-shape'> ссылке</a>.
             </Text>
-            <Br/>
             <Text>
                 Созданные структуры данных хранятся внутри нашего приложения и,
                 следовательно, в памяти устройства пользователя. Данные нужно получать,
@@ -48,7 +44,6 @@ const Introduction = () => {
                 Чем лучше организована структура данных,
                 тем быстрее работает ваше приложение на устройстве пользователя.
             </Text>
-            <Br/>
             <Text>
                 Чтобы следовать рекомендациям того же Redux,
                 мы должны понимать, что такое структура данных,
